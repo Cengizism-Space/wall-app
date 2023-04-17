@@ -1,13 +1,13 @@
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./firebase";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [quotes, setQuotes] = useState([]);
 
-  const fetchQuotes = async () => {
+  const fetchQuotes = useCallback(async () => {
     setLoading(true);
     await getDocs(collection(db, "quotes")).then((querySnapshot) => {
       const newData = querySnapshot.docs.map((doc) => ({
@@ -18,11 +18,11 @@ function App() {
       setQuotes(newData);
       console.log(quotes, newData);
     });
-  };
+  }, [quotes]);
 
   useEffect(() => {
     fetchQuotes();
-  }, []);
+  }, [fetchQuotes]);
 
   return (
     <div className="App">

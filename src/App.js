@@ -1,25 +1,9 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState } from "react";
 import "./App.css";
+import quotesData from "./quotes.json";
 
 function App() {
-  const [quotes, setQuotes] = useState([]);
-
-  const fetchQuotes = useCallback(async () => {
-    setQuotes([
-      {
-        block: "Simplicity is the ultimate sophistication.",
-        cite: "Leonardo da Vinci",
-      },
-      {
-        block: "Gravitation is not the reason for falling in love.",
-        cite: "Albert Einstein",
-      },
-    ]);
-  }, []);
-
-  useEffect(() => {
-    fetchQuotes();
-  }, [fetchQuotes]);
+  const [quotes] = useState(quotesData);
 
   return (
     <div className="App">

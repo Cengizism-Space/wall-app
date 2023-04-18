@@ -1,28 +1,25 @@
 .App {
-  text-align: center;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: calc(2rem + 1.5vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+blockquote {
+  max-width: 50%;
 }
 
-.App blockquote i {
+blockquote i {
   background: -webkit-linear-gradient(45deg, #a87506, #00ff95 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
-.App ul {
-  list-style: none;
-}
-
-.App cite {
+cite {
   font-size: calc(0.5rem + 1.5vmin);
 }

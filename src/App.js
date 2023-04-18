@@ -17,12 +17,31 @@ function App() {
     setQuote(quotesData[count]);
   }, [count]);
 
+  const Liner = (block) => {
+    if (typeof block === "object") {
+      return block.map((line, index) => {
+        return (
+          <>
+            <i key={index}>{line}</i>
+            <br />
+          </>
+        );
+      });
+    }
+
+    return (
+      <>
+        <i>{block}</i>
+        <br />
+      </>
+    );
+  };
+
   return (
     <div className="App">
       <blockquote>
-        <i>{quote.block}</i>
-        <br />
-        <cite>{quote.cite}</cite>
+        {Liner(quote.block)}
+        {quote.type !== "motivation" && <cite>{quote.cite}</cite>}
       </blockquote>
     </div>
   );

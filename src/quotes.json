@@ -1,14 +1,54 @@
 [
   {
+    "block": [
+      "Mutsuz musun?",
+      "Hic dusunmeden seni uzen seyden vazgec!",
+      "Rabbim sagim ve solum sana emanet,",
+      "hakkimda hayirli olani nasip et.."
+    ],
+    "type": "motivation"
+  },{
+    "block": [
+      "Cok dolarsan Rabbine anlat",
+      "Sikilinca Rabbine sigin",
+      "Terk edilirsen Rabbini yalnizligina ekle",
+      "Yokluga dusersen varligi ile herseyi var eden Rabbinin kapisini cal",
+      "Dusersen elini Rabbine uzat",
+      "Allah'a (C.C.) yuru, o sana kosarak gelir."
+    ],
+    "type": "motivation"
+  },{
+    "block": [
+      "Ben degerliyim",
+      "Ben gucluyum",
+      "Ben basariliyim",
+      "Ben yilmam",
+      "Ben caliskanim",
+      "Ben saglikliyim",
+      "Ben huzurluyum",
+      "Ben guvendeyim",
+      "Ben yeterliyim",
+      "Kendimi oldugum gibi kabul ediyorum",
+      "Kendimi onayliyorum",
+      "Kendimi affediyorum",
+      "Kendimi seviyorum",
+      "Hayata ve insanlara guveniyorum."
+    ],
+    "type": "motivation"
+  },
+  {
     "block": "Guzel goren guzel dusunur, guzel dusunen ise hayattan lezzet alir.",
-    "cite": "Bediuzzaman Said Nursi"
+    "cite": "Bediuzzaman Said Nursi",
+    "type": "quote"
   },
   {
     "block": "Simplicity is the ultimate sophistication.",
-    "cite": "Leonardo da Vinci"
+    "cite": "Leonardo da Vinci",
+    "type": "quote"
   },
   {
     "block": "Gravitation is not the reason for falling in love.",
-    "cite": "Albert Einstein"
+    "cite": "Albert Einstein",
+    "type": "quote"
   }
 ]

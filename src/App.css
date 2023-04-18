@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 1.5vmin);
+  font-size: calc(2rem + 1.5vmin);
   color: white;
 }
 
@@ -12,10 +12,17 @@
   color: #61dafb;
 }
 
+.App blockquote i {
+  background: -webkit-linear-gradient(45deg, #a87506, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .App ul {
   list-style: none;
 }
 
 .App cite {
-  font-size: calc(1.5vmin);
+  font-size: calc(0.5rem + 1.5vmin);
 }

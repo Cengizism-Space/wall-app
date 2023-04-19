@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(2rem + 1.5vmin);
+  font-size: calc(1.6rem + 1.5vmin);
   color: white;
 }
 
@@ -14,9 +14,9 @@ blockquote {
 }
 
 blockquote i {
-  background: -webkit-linear-gradient(45deg, #a87506, #00ff95 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(45deg, #a87506, #00ff95 80%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   font-weight: bold;
 }
 
